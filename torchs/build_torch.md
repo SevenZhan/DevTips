@@ -22,12 +22,15 @@ building
 # build torchvision from source
 
 get torchvision from source
+
     git clone https://github.com/pytorch/vision
     cd vision
 if you are updating an existing checkout
+
     git submodule sync
     git submodule update --init --recursive
 building
+
     python setup.py install
 
 
@@ -35,12 +38,15 @@ building
 # build ignite from source
 
 get ignite from source
+
     git clone https://github.com/pytorch/ignite
     cd ignite
 if you are updating an existing checkout
+
     git submodule sync
     git submodule update --init --recursive
 building
+
     python setup.py install
 
 
@@ -48,9 +54,11 @@ building
 # build fastai from source
 
 get fastai from source
+
     git clone https://github.com/fastai/fastai
     cd fastai
 building
+
     tools/run-after-git-clone
     pip install -e ".[dev]"
 
