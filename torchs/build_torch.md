@@ -1,6 +1,7 @@
 # build pytorch from source
 
 common dependencies
+
     conda install numpy ninja pyyaml mkl mkl-include setuptools cmake cffi typing
     conda install -c pytorch magma-cuda90 # or [magma-cuda92 | magma-cuda100 ] depending on your cuda version
 get pytorch from source
