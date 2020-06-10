@@ -5,12 +5,15 @@ common dependencies
     conda install numpy ninja pyyaml mkl mkl-include setuptools cmake cffi typing
     conda install -c pytorch magma-cuda90 # or [magma-cuda92 | magma-cuda100 ] depending on your cuda version
 get pytorch from source
+
     git clone --recursive https://github.com/pytorch/pytorch
     cd pytorch
 if you are updating an existing checkout
+
     git submodule sync
     git submodule update --init --recursive
 building
+
     export CMAKE_PREFIX_PATH=${CONDA_PREFIX:-"$(dirname $(which conda))/../"}
     python setup.py install
 
